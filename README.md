@@ -4,7 +4,7 @@
 
 ## Features
 
-- **Intuitive & Dynamic Menu Filtering** – Filter items by Veg/Non-Veg, diabetic-friendly, spicy, oily, and age-specific preferences.  
+- **Intuitive & Dynamic Menu Filtering** – Filter items by Veg/Non-Veg, diabetic-friendly, spicy, less oily, and age-specific preferences.  
 - **Real-Time Order Summary** – Select multiple items, adjust quantities, and get a live total price.  
 - **Database-Driven** – Menu items, users, and orders are managed seamlessly using MySQL.  
 - **User-Friendly Interface** – Visually appealing layout with clear dietary indicators.  
