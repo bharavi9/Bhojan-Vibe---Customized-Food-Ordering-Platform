@@ -1,0 +1,802 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Bhojan vibes</title>
+    <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;700&display=swap" rel="stylesheet" />
+    <link href="https://cdn.jsdelivr.net/npm/aos@2.3.4/dist/aos.css" rel="stylesheet" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.0/css/all.min.css" />
+   
+    <link rel="stylesheet" type="text/css" href="css/style.css" />
+ 
+</head>
+
+
+<body>
+
+
+
+
+
+
+    <header id="mainHeader">
+        <div class="logo">
+            <i class="fa-solid fa-utensils"></i> Bhojan Vibes
+        </div>
+        <div class="hamburger" onclick="toggleMenu()">
+            <div></div>
+            <div></div>
+            <div></div>
+        </div>
+        <nav id="nav-menu">
+            <ul>
+                <li><a href="#home" class="active">Home</a></li>
+                <li class="dropdown">
+                    <a href="#menu" class="dropbtn">Menu</a>
+                    <div class="dropdown-content">
+                        <a href="#menu" data-filter="all">All</a>
+                        <a href="#menu" data-filter="pizza">Pizza</a>
+                        <a href="#menu" data-filter="burger">Burger</a>
+                        <a href="#menu" data-filter="pasta">Pasta</a>
+                        <a href="#menu" data-filter="Sandwich">Sandwich</a>
+                    </div>
+                </li>
+                <li><a href="#services">Services</a></li>
+                <li><a href="#about">About us</a></li>
+                <li><a href="#contact">Contacts</a></li>
+            </ul>
+        </nav>
+
+
+
+        <div class="btn-group">
+            <div class="searchBox">
+                <input class="searchInput" type="text" placeholder="Search">
+                <button class="searchButton">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                </button>
+            </div>
+
+           
+            <button class="btnPrimary" onclick="window.location.href='login.jsp'">Sign In</button>
+
+        </div>
+
+
+    </header>
+    <section class="hero" id="home">
+        <div class="conatiner heroContainer">
+            <div class="hero-text" data-aos="fade-right">
+                <h1>Enjoy Your Delicious<span> Food</span></h1>
+                <p>We will fill your tummy with delicious food and on time delivery.</p>
+                <button class="btnPrimary">Order Now</button>
+                <button class="btnSecondary">Explore Menu</button>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+
+                </div>
+            </div>
+            <div class="hero-image" data-aos="fade-left">
+                <img src="images/foodlist8.jpg" class="heroIcon2" data-aos="zoom-in" />
+                <img src="images/foodlist7.jpg" class="heroIcon4" data-aos="zoom-in" />
+                <img src="images/foodlist5.jpg" class="heroIcon5" data-aos="zoom-in" />
+                <img src="images/foodlist6.jfif" class="heroIcon6" data-aos="zoom-in" />
+                <img src="images/heroimagebg.png" class="mainHeroImage" />
+            </div>
+        </div>
+
+    </section>
+
+    <section class="service" id="service">
+        <p class="subtitle" data-aos="zoom-in">Our Services</p>
+        <h2 class="title" data-aos="zoom-in">How Does It Work?</h2>
+
+        <div class="container">
+            <div class="service-box" data-aos="fade-left">
+                <img src="images/order.jpeg">
+                <h3>Easy To Order</h3>
+                <p>You only need a few steps in ordering food.</p>
+            </div>
+
+            <div class="service-box" data-aos="fade-down">
+                <img src="images/deliveryboy.png">
+                <h3>Fastest Delivery</h3>
+                <p>Delivery that is always on time even faster.</p>
+            </div>
+
+            <div class="service-box" data-aos="fade-right">
+                <img src="images/quality.jpeg">
+                <h3>Best Quality</h3>
+                <p>Not only fast for us quality is also number one.</p>
+            </div>
+        </div>
+    </section>
+
+
+
+
+    <section class="filterSection" id="menu">
+        <div class="menu-header-wrapper">
+            <h4 class="subtitle center-heading">OUR MENU</h4>
+            <div class="age-dropdown">
+                <label for="age">Select Age:</label>
+                <select id="age" name="age">
+                    <option value="">-- Choose Age --</option>
+                    <option value="under 18">Under 18</option>
+                    <option value="18-30">18-30</option>
+                    <option value="31-44">31-44</option>
+                    <!-- <option value="35-44">35-44</option> -->
+                    <option value="45 and above">45 and above</option>
+                </select>
+            </div>
+        </div>
+
+        <h2 class="title">We Offer People Best Way<br>To Eat Best <span class="highlight">Food</span></h2>
+        <div class="filter-buttons" data-aos="fade-right">
+            <button class="filter-btn active" data-filter="all"> All </button>
+            <button class="filter-btn" data-filter="pizza"> Pizza </button>
+            <button class="filter-btn" data-filter="burger"> Burger </button>
+            <button class="filter-btn" data-filter="fries"> Fries </button>
+
+        </div>
+
+        <div class="container">
+            <div class="card-grid" data-aos="fade-right">
+
+                <!-- 1. Pizza -->
+                <div class="card" data-category="pizza">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/pizza.jpeg">
+                    <h4>Pepperonia Pizza</h4>
+                    <p>Chesse, Tomatio, Oilves</p>
+                    <div class="price">100.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <!-- 2. Burger -->
+                <div class="card" data-category="burger">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/burger.jpeg">
+                    <h4>Cheese Burger</h4>
+                    <p>Cheese, Tomato, Olives</p>
+                    <div class="price">120.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <!-- 3. Fries -->
+                <div class="card" data-category="fries">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/fb.jpeg">
+                    <h4>French Fries</h4>
+                    <p>Crispy and Golden</p>
+                    <div class="price">60.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <!-- 4. Pizza again -->
+                <div class="card" data-category="pasta">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/pasta.jpg">
+                    <h4>Pasta</h4>
+                    <p>Spicy Pasta</p>
+                    <div class="price">100.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <!-- 5. Sandwich -->
+                <div class="card" data-category="Sandwich">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/sandwich.jpeg">
+                    <h4>Sandwich</h4>
+                    <p>Cheese, Tomato, Olives</p>
+                    <div class="price">60.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <!-- 6. Chicken -->
+                <div class="card" data-category="fries">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/chicken.jpeg">
+                    <h4>Chicken</h4>
+                    <p>Crispy and Golden</p>
+                    <div class="price">100.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <!-- ✅ Additional 10 Food Cards -->
+
+                <div class="card" data-category="salad">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/salad.jpg">
+                    <h4>Salad</h4>
+                    <p>Fruits, Onion, Paneer</p>
+                    <div class="price">130.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="smoothie">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/smoothies.jpg">
+                    <h4>Smoothie</h4>
+                    <p>Strawberry,milk</p>
+                    <div class="price">90.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="Paneer">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/paneer.jpg">
+                    <h4>Mutter paneer</h4>
+                    <p>Mutter, Spicy & Crispy paneer</p>
+                    <div class="price">160.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="Grilled Food">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/grilled.jpg   ">
+                    <h4>Grilled Food</h4>
+                    <p>Grilled taste food</p>
+                    <div class="price">180.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+ 
+
+
+                <div class="card" data-category="Biriyani">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/biiryani.jpg">
+                    <h4>Biriyani</h4>
+                    <p>Aromatic basmati rice cooked with tender spices, herbs, and marinated meat or vegetables a royal
+                        Indian delicacy</p>
+                    <div class="price">250.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="Chapati">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/chapati.jpg">
+                    <h4>Chapati</h4>
+                    <p>Whole Wheat chapati</p>
+                    <div class="price">30.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="green tea">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/green tea.jpg">
+                    <h4>Greeen Tea</h4>
+                    <p>Green Tea Good For Health</p>
+                    <div class="price">50.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="Ragi malt">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/ragi-malt-ragi-porridge.jpg">
+                    <h4>Ragi Porridge</h4>
+                    <p>Easy for Digest</p>
+                    <div class="price">70.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="Herbal Tea">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/herbal.jpg">
+                    <h4>Herbal Tea</h4>
+                    <p>Good For Health</p>
+                    <div class="price">50.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="cerlac">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/cerlac.jpg">
+                    <h4>Millet</h4>
+                    <p>Good For Health</p>
+                    <div class="price">130.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="high_protein">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/high_protein.jpg">
+                    <h4>High_Protein</h4>
+                    <p>Breakfast Bowl</p>
+                    <div class="price">150.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+                <div class="card" data-category="Dal & Roti">
+                    <div class="hover-icons">
+                        <i class="fas fa-shopping-cart"></i>
+                        <i class="fas fa-heart"></i>
+                        <i class="fas fa-eye"></i>
+                    </div>
+                    <img src="images/dal.jpg">
+                    <h4>Dal & Roti</h4>
+                    <p>A wholesome Indian meal featuring soft butter roti served with flavorful garlic-tempered dal</p>
+                    <div class="price">200.00 rs</div>
+                    <div class="actions">
+                        <button class="btnPrimary">Add to Cart</button>
+                        <button class="btnSecondary">Watch List</button>
+                    </div>
+                </div>
+
+            </div> 
+        </div> 
+
+    </section>
+
+    <!-- Services Section -->
+    <section class="services-section" id="services">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="subtitle">OUR SERVICES</p>
+                <h2 class="title">What We Offer</h2>
+                <p class="section-description">Discover our comprehensive range of food services designed to satisfy
+                    your cravings</p>
+            </div>
+
+            <div class="services-grid">
+                <div class="service-card" data-aos="fade-up" data-aos-delay="100">
+                    <div class="service-icon">
+                        <i class="fas fa-utensils"></i>
+                    </div>
+                    <h3>Dine-In Experience</h3>
+                    <p>Enjoy our cozy atmosphere with comfortable seating and excellent service. Perfect for family
+                        gatherings and special occasions.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Comfortable seating</li>
+                        <li><i class="fas fa-check"></i> Family-friendly environment</li>
+                        <li><i class="fas fa-check"></i> Professional staff</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="200">
+                    <div class="service-icon">
+                        <i class="fas fa-motorcycle"></i>
+                    </div>
+                    <h3>Fast Delivery</h3>
+                    <p>Get your favorite dishes delivered to your doorstep within 30 minutes. Hot, fresh, and on time,
+                        every time.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> 30-minute delivery</li>
+                        <li><i class="fas fa-check"></i> Real-time tracking</li>
+                        <li><i class="fas fa-check"></i> Contactless delivery</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="300">
+                    <div class="service-icon">
+                        <i class="fas fa-calendar-alt"></i>
+                    </div>
+                    <h3>Catering Services</h3>
+                    <p>Make your events special with our professional catering services. From corporate events to
+                        weddings, we've got you covered.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Custom menus</li>
+                        <li><i class="fas fa-check"></i> Event planning</li>
+                        <li><i class="fas fa-check"></i> Professional setup</li>
+                    </ul>
+                </div>
+
+                <div class="service-card" data-aos="fade-up" data-aos-delay="400">
+                    <div class="service-icon">
+                        <i class="fas fa-mobile-alt"></i>
+                    </div>
+                    <h3>Online Ordering</h3>
+                    <p>Order your favorite meals with just a few clicks. Our user-friendly app makes ordering quick and
+                        convenient.</p>
+                    <ul class="service-features">
+                        <li><i class="fas fa-check"></i> Easy ordering</li>
+                        <li><i class="fas fa-check"></i> Multiple payment options</li>
+                        <li><i class="fas fa-check"></i> Order history</li>
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- About Us Section -->
+    <section class="about-section" id="about">
+        <div class="container">
+            <div class="about-content">
+                <div class="about-text" data-aos="fade-right">
+                    <p class="subtitle">ABOUT US</p>
+                    <h2 class="title">Our Story</h2>
+                    <p class="about-description">
+                        Founded in 2020, Bhojan Vibes started as a small family restaurant with a big dream - to serve
+                        the most delicious and authentic food while creating memorable dining experiences for our
+                        customers.
+                    </p>
+                    <p class="about-description">
+                        Today, we've grown into one of the most loved food destinations, serving thousands of happy
+                        customers daily. Our commitment to quality, freshness, and exceptional service remains
+                        unchanged.
+                    </p>
+
+                    <div class="about-stats">
+                        <div class="stat-item">
+                            <h3>5000+</h3>
+                            <p>Happy Customers</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>50+</h3>
+                            <p>Menu Items</p>
+                        </div>
+                        <div class="stat-item">
+                            <h3>5</h3>
+                            <p>Years Experience</p>
+                        </div>
+                    </div>
+
+                    <div class="about-features">
+                        <div class="feature">
+                            <i class="fas fa-star"></i>
+                            <div>
+                                <h4>Quality Assured</h4>
+                                <p>We use only the finest ingredients</p>
+                            </div>
+                        </div>
+                        <div class="feature">
+                            <i class="fas fa-clock"></i>
+                            <div>
+                                <h4>Fast Service</h4>
+                                <p>Quick preparation and delivery</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="about-image" data-aos="fade-left">
+                    <img src="heroimagebg.png" alt="About Bhojan Vibes">
+                </div>
+            </div>
+        </div>
+    </section>
+
+
+    <section class="contact-section" id="contact">
+        <div class="container">
+            <div class="section-header" data-aos="fade-up">
+                <p class="subtitle">CONTACT US</p>
+                <h2 class="title">Get In Touch</h2>
+                <p class="section-description">We'd love to hear from you. Send us a message and we'll respond as soon
+                    as possible.</p>
+            </div>
+
+            <div class="contact-content">
+                <div class="contact-info" data-aos="fade-right">
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-map-marker-alt"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Our Location</h4>
+                            <p>123 Food Street, Cuisine City<br>Karnataka, India 560103</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-phone"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Phone Number</h4>
+                            <p>+91 98765 43210<br>+91 98765 43211</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-envelope"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Email Address</h4>
+                            <p>info@bhojanvibes.com<br>support@bhojanvibes.com</p>
+                        </div>
+                    </div>
+
+                    <div class="contact-item">
+                        <div class="contact-icon">
+                            <i class="fas fa-clock"></i>
+                        </div>
+                        <div class="contact-details">
+                            <h4>Opening Hours</h4>
+                            <p>Monday - Sunday<br>10:00 AM - 11:00 PM</p>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="contact-form" data-aos="fade-left">
+                    <form id="contactForm">
+                        <div class="form-group">
+                            <input type="text" id="name" name="name" placeholder="Your Name" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="email" id="email" name="email" placeholder="Your Email" required>
+                        </div>
+                        <div class="form-group">
+                            <input type="tel" id="phone" name="phone" placeholder="Your Phone">
+                        </div>
+                        <div class="form-group">
+                            <select id="subject" name="subject" required>
+                                <option value="">Select Subject</option>
+                                <option value="general">General Inquiry</option>
+                                <option value="order">Order Issue</option>
+                                <option value="feedback">Feedback</option>
+                                <option value="catering">Catering Request</option>
+                            </select>
+                        </div>
+                        <div class="form-group">
+                            <textarea id="message" name="message" placeholder="Your Message" rows="5"
+                                required></textarea>
+                        </div>
+                        <button type="submit" class="btnPrimary">Send Message</button>
+                    </form>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section class="app-promo           ">
+        <div class="app-text" data-aos="fade-left">
+            <p class="small-heading">OUR APPLICATION</p>
+            <h1>Simple Way To Order <br> Your Food</h1>
+            <p class="description">
+                Discover food whenever and wherever <br />and get your food delivered
+            </p>
+            <button class="btnSecondary">Get the app</button>
+        </div>
+        <div class="app-image" data-aos="fade-right">
+            <img src="app.webp">
+        </div>
+    </section>
+
+    <section>
+        <div class="newsletter-container" data-aos="zoom-in">
+            <h4>OUR SUBSCRIBERS</h4>
+            <h1>Subscribe To Our Newsletter</h1>
+            <p>We recommend you to subscribe to our newspaper, drop your email <br />
+                below to get daily update</p>
+
+            <form class="newsletter-form">
+                <input type="email" placeholder="Enter Your Email Address" readonly>
+                <button class="btnPrimary" style="border-radius: 50px;">Subscribe</button>
+
+            </form>
+
+        </div>
+    </section>
+
+    <button id="backToTop">
+        <i class="fa-solid fa-arrow-up"></i>
+    </button>
+
+    <footer class="footer">
+        <div class="container">
+            <div class="footer-column brand">
+                <div class="logo">
+                    <i class="fa-solid fa-utensils"></i> Bhojan Vibes
+                </div>
+                <br />
+                <p>We Will fill your timmy with delicious <br /> food with fast delivery.
+                </p>
+                <div class="social-icons">
+                    <a href="#"><i class="fa-brands fa-facebook-f"></i></a>
+                    <a href="#"><i class="fa-brands fa-twitter"></i></a>
+                    <a href="#"><i class="fa-brands fa-instagram"></i></a>
+                    <a href="#"><i class="fa-brands fa-youtube"></i></a>
+                </div>
+            </div>
+            <div class="footer-column">
+                <h3>Company</h3>
+                <ul>
+                    <li>Why Bhojan Vibes?</li>
+                    <li>Partner with us</li>
+                    <li>About us</li>
+                    <li>FAQ</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Support</h3>
+                <ul>
+                    <li>Account</li>
+                    <li>Support center</li>
+                    <li>Feedback</li>
+                    <li>Contacts</li>
+                </ul>
+            </div>
+
+            <div class="footer-column">
+                <h3>Stay Connected</h3>
+                <p>Question or feedback?<br />We'd love to hear from you.</p>
+                <br />
+                <form class="subscribe-form">
+                    <input type="email" placeholder="Email Address" required>
+                    <button class="btnPrimary" style="border-radius: 0px 30px 30px 0px">
+                        Send
+                    </button>
+                </form>
+            </div>
+        </div>
+
+    </footer>
+    <div class="footer-bottom">
+        Copyright @ 2025 M-SoftTech, All rights reserved. Powered by M-SoftTech.
+    </div>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <script src="js/custom.js"></script>
+
+</body>
+
+<script>
+    document.getElementById('age').addEventListener('change', function () {
+        const selectedAge = this.value;
+        const cards = document.querySelectorAll('.card');
+
+
+        let allowedCategories = [];
+
+        switch (selectedAge) {
+            case 'under 18':
+                allowedCategories = ['salad', 'smoothie', 'burger', 'Sandwich', 'Ragi malt', 'cerlac', 'high_protein'];
+                break;
+            case '18-30':
+                allowedCategories = ['pizza', 'burger', 'Paneer', 'Biriyani', 'smoothie', 'high_protein'];
+                break;
+            case '31-44':
+                allowedCategories = ['Dal & Roti', 'Grilled Food', 'Biriyani', 'high_protein'];
+                break;
+            case '45 and above':
+                allowedCategories = ['Chapati', 'green tea', 'Herbal Tea', 'Ragi malt'];
+                break;
+           
+
+            default:
+                cards.forEach(card => card.style.display = 'block');
+                return;
+
+
+        }
+
+
+        cards.forEach(card => {
+            const category = card.getAttribute('data-category');
+            if (allowedCategories.includes(category)) {
+                card.style.display = 'block';
+            } else {
+                card.style.display = 'none';
+            }
+        });
+    });
+
+</script>
+
+</html>

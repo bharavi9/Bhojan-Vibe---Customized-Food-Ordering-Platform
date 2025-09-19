@@ -1,0 +1,23 @@
+#cartBox {
+    width: 300px;
+    position: fixed;
+    right: 20px;
+    top: 80px;
+    background-color: #fff;
+    border: 2px solid #444;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0,0,0,0.2);
+    z-index: 1000;
+    display: none;
+}
+
+.cart-item {
+    margin-bottom: 10px;
+    padding: 5px;
+    border-bottom: 1px solid #ccc;
+}
+
+.cart-total {
+    font-weight: bold;
+    margin-top: 15px;
+}
